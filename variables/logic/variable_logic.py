@@ -6,8 +6,8 @@ def get_variables():
     return (queryset)
 
 
-def create_variable(str):
-    measurement = 'str'.save()
+def create_variable(form):
+    measurement = form.save()
     measurement.save()
     return ()
 

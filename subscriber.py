@@ -38,7 +38,7 @@ print('> Waiting measurements. To exit press CTRL+C')
 def callback(ch, method, properties, body):
     payload = json.loads(body.decode('utf8').replace("'", '"'))
     topic = method.routing_key.split('.')
-    variable = get_variable(topic[2])
+    variable = get_variable("Oxygen")
     create_measurement_object(
         variable, payload['value'], payload['unit'], topic[0] + topic[1])
     if variable.name == 'Temperature':
