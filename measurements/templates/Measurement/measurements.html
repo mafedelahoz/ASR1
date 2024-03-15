@@ -4,7 +4,7 @@
 <div class="content">
     <div class="">
         <div class="page-header-title">
-            <h4 class="page-title">Last Ten Measures</h4>
+            <h4 class="page-title">OTP'S recibidos</h4>
             <!--- 
             <div style="text-align:right;">
                 <button type="button" class="btn btn-success waves-effect waves-light"
@@ -26,10 +26,8 @@
                     <table class="table table-hover">
                         <thead>
                         <tr style="color:#0E2EB0">
-                            <th font color="red">Variable</th>
+                            <th font color="red">Validacion</th>
                             <th>Value</th>
-                            <th>Unit</th>
-                            <th>Place</th>
                             <th>Date Time</th>
                         </tr>
                         </thead>
@@ -39,8 +37,6 @@
                         <tr>
                             <td>{{ measurement.variable.name }}</td>
                             <td>{{ measurement.value }}</td>
-                            <td>{{ measurement.unit }}</td>
-                            <td>{{ measurement.place }}</td>
                             <td>{{ measurement.dateTime }}</td>
                         </tr>
                         {% endfor %}
