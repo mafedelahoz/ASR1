@@ -7,7 +7,7 @@ def get_variables():
 
 
 def create_variable(str):
-    measurement = str.save()
+    measurement = 'str'.save()
     measurement.save()
     return ()
 
